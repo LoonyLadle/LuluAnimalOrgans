@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ModSyncNinjaData>
+  <ID>b66f790c-2adb-4845-a93a-4d8ca9638969</ID>
+  <ModName>Lulu's Animal Organs</ModName>
+  <Version>1.0.0</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>LoonyLadle</Owner>
+    <Project>LuluAnimalOrgans</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncReleases</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>

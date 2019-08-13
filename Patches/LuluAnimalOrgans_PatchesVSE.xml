@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- Compatibility patch for Lulu's Vanilla Surgery Expansion. -->
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Lulu's Vanilla Surgery Expansion</li>
+    </mods>
+    <!-- Add VSE recipes to base animal thing -->
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+      <value>
+        <li>LuluVSE_InstallNaturalStomach</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>
