@@ -2,6 +2,7 @@
 <Patch>
   <!-- Add comps node if it doesn't exist. -->
   <Operation Class="PatchOperationConditional">
+    <success>Always</success>
     <xpath>Defs/ThingDef[@Name = "BodyPartNaturalBase"]/comps</xpath>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[@Name = "BodyPartNaturalBase"]</xpath>
