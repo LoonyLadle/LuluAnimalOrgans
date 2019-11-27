@@ -15,7 +15,9 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[@Name = "BodyPartNaturalBase"]/comps</xpath>
     <value>
-      <li Class="LoonyLadle.AnimalOrgans.CompProperties_OrganOrigin"/>
+      <li>
+        <compClass>LoonyLadle.AnimalOrgans.CompOrganOrigin</compClass>
+      </li>
     </value>
   </Operation>
   <!-- Add organ origin stat part to market value. -->

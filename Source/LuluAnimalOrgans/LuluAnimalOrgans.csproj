@@ -50,9 +50,8 @@
     <Compile Include="HarmonyPatches\HarmonyPatch_Bill_IsFixedOrAllowedIngredient_Thing.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatch_MedicalRecipesUtility_IsCleanAndDroppable.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatch_MedicalRecipesUtility_SpawnNaturalPartIfClean.cs" />
-    <Compile Include="MyThingCategoryDefOf.cs" />
+    <Compile Include="MyDefOf.cs" />
     <Compile Include="StatPart_OrganOrigin.cs" />
-    <Compile Include="CompProperties_OrganOrigin.cs" />
     <Compile Include="CompOrganOrigin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
