@@ -51,6 +51,8 @@
     <Compile Include="HarmonyPatches\HarmonyPatch_MedicalRecipesUtility_IsCleanAndDroppable.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatch_MedicalRecipesUtility_SpawnNaturalPartIfClean.cs" />
     <Compile Include="MyDefOf.cs" />
+    <Compile Include="SpecialThingFilterWorker_OrgansAnimals.cs" />
+    <Compile Include="SpecialThingFilterWorker_OrgansHumanlike.cs" />
     <Compile Include="StatPart_OrganOrigin.cs" />
     <Compile Include="CompOrganOrigin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

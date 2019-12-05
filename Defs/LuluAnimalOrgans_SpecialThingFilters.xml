@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Defs>
+	<SpecialThingFilterDef>
+		<defName>LuluAnimalOrgans_AllowHumanlikeOrgans</defName>
+		<label>allow humanlike organs</label>
+		<description>Allow organs originating from human-likes.</description>
+		<parentCategory>BodyPartsNatural</parentCategory>
+		<allowedByDefault>true</allowedByDefault>
+		<saveKey>luluAnimalOrgans_allowOrgansHumanlike</saveKey>
+		<workerClass>LoonyLadle.AnimalOrgans.SpecialThingFilterWorker_OrgansHumanlike</workerClass>
+	</SpecialThingFilterDef>
+
+	<SpecialThingFilterDef>
+		<defName>LuluAnimalOrgans_AllowAnimalOrgans</defName>
+		<label>allow animal organs</label>
+		<description>Allow organs originating from animals.</description>
+		<parentCategory>BodyPartsNatural</parentCategory>
+		<allowedByDefault>true</allowedByDefault>
+		<saveKey>luluAnimalOrgans_allowOrgansAnimal</saveKey>
+		<workerClass>LoonyLadle.AnimalOrgans.SpecialThingFilterWorker_OrgansAnimal</workerClass>
+	</SpecialThingFilterDef>
+</Defs>
