@@ -35,5 +35,17 @@ namespace LoonyLadle.AnimalOrgans
 			// Will change "lung" to "human lung", for example.
 			return originDef.label + " " + label;
 		}
+
+		public override bool AllowStackWith(Thing other)
+		{
+			CompOrganOrigin otherComp = other.TryGetComp<CompOrganOrigin>();
+			return (otherComp != null) && (otherComp.originDef == originDef);
+		}
+
+		public override void PostSplitOff(Thing piece)
+		{
+			base.PostSplitOff(piece);
+			piece.TryGetComp<CompOrganOrigin>().originDef = originDef;
+		}
 	}
 }

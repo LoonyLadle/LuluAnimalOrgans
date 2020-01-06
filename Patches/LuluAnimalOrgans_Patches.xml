@@ -20,6 +20,17 @@
 			</li>
 		</value>
 	</Operation>
+	<!-- Prevent organs from stacking in trade menus. -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name = "BodyPartNaturalBase"]/tradeNeverStack</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@Name = "BodyPartNaturalBase"]</xpath>
+			<value>
+				<tradeNeverStack>true</tradeNeverStack>
+			</value>
+		</nomatch>
+	</Operation>
 	<!-- Add organ origin stat part to market value. -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/StatDef[defName = "MarketValue"]/parts</xpath>
