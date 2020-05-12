@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
 using System.Text;
 using Verse;
@@ -13,7 +13,7 @@ namespace LoonyLadle.AnimalOrgans
 		static MyStaticConstructor()
 		{
 			// Execute our Harmony patches.
-			HarmonyInstance harmony = HarmonyInstance.Create("rimworld.loonyladle.animalorgans");
+			Harmony harmony = new Harmony("rimworld.loonyladle.animalorgans");
 			harmony.PatchAll();
 
 			StringBuilder stringBuilder = new StringBuilder("[LuluAnimalOrgans] Dynamic patched the following defs: ");

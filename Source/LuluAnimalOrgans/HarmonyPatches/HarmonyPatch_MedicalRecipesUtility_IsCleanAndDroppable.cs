@@ -1,6 +1,7 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Reflection.Emit;
 using Verse;
 
@@ -25,7 +26,7 @@ namespace LoonyLadle.AnimalOrgans
 				blockInstructions.Add(instruction);
 
 				// If an unwanted operand is found in this block, set our discard flag.
-				if (instruction.opcode == OpCodes.Callvirt && instruction.operand == typeof(RaceProperties).GetProperty(nameof(RaceProperties.Animal)).GetGetMethod())
+				if (instruction.opcode == OpCodes.Callvirt && (MethodInfo)instruction.operand == typeof(RaceProperties).GetProperty(nameof(RaceProperties.Animal)).GetGetMethod())
 				{
 					discard = true;
 				}
